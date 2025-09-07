@@ -1,0 +1,11 @@
+<svg width="26" height="24" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+ <g>
+  <title>Layer 1</title>
+  <g stroke-width="0" id="SVGRepo_bgCarrier"/>
+  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"/>
+  <g id="SVGRepo_iconCarrier">
+   <path id="svg_1" fill="#ffffff" d="m4,5c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1l16,0c0.5523,0 1,-0.44772 1,-1c0,-0.55228 -0.4477,-1 -1,-1l-16,0zm3,7c0,-0.5523 0.44772,-1 1,-1l12,0c0.5523,0 1,0.4477 1,1c0,0.5523 -0.4477,1 -1,1l-12,0c-0.55228,0 -1,-0.4477 -1,-1zm6,6c0,-0.5523 0.4477,-1 1,-1l6,0c0.5523,0 1,0.4477 1,1c0,0.5523 -0.4477,1 -1,1l-6,0c-0.5523,0 -1,-0.4477 -1,-1z" clip-rule="evenodd" fill-rule="evenodd"/>
+  </g>
+ </g>
+</svg>

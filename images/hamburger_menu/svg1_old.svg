@@ -1,0 +1,13 @@
+<svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+ <g>
+  <title>Layer 1</title>
+  <g stroke-width="0" id="SVGRepo_bgCarrier"/>
+  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"/>
+  <g id="SVGRepo_iconCarrier">
+   <path id="svg_1" stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="m4,18l16,0"/>
+   <path id="svg_2" stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="m4,12l16,0"/>
+   <path id="svg_3" stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="m4,6l16,0"/>
+  </g>
+ </g>
+</svg>

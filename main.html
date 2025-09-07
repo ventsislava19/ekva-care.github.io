@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/nav_bar/EKVA_Care_Logo.svg">
+
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+         rel="stylesheet">
+
+    <title>EKVA Care</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script src="main.js" defer></script>
+</head>
+<body class="home">
+
+    <header class="primary-header flex background-image home-header">
+
+        <div class="primary-header-1">
+
+            <div>
+                <a href="design-system.html"><img src="images/nav_bar/EKVA_Care_Logo.svg" alt="ekva-care logo" class="logo"></a>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+
+            <nav>
+                <ul data-devisible="false" class="primary-navigation underline-indicators flex">
+                    <li class="active"><a class="uppercase ff-serif" href="main.html">Home</a></li>
+                    <li><a class="uppercase ff-serif" href="about.html">About</a></li>
+                    <li><a class="uppercase ff-serif" href="blog.html">Blog</a></li>
+                    <li><a class="uppercase ff-serif" href="resources.html">Resources</a></li>
+                    <li><a class="uppercase ff-serif" href="shop.html">Shop</a></li>
+                    <li><a class="uppercase ff-serif" href="contact.html">Contact</a></li>
+                    <li><a class="uppercase ff-serif book-now" href="book-now.html">Book Now</a></li>
+                    <li><a href="main.html"><img src="images/nav_bar/globus.svg" alt="language globus" class="globus"></a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- Banner -->
+        <div class="banner-leading">
+            <h1 class="text-green fs-800 ff-serif uppercase letter-spacing-1">Dietetics: THE SCIENCE OF BEING HEALTHY</h1>
+
+            <p class="text-green ff-serif letter-spacing-2">At EKVA Care, we specialise in personalised dietetics services to help you achieve your health goals through sustainable habits and positive lifestyle changes.</p>
+
+            <p><a href="about.html" class="text-green uppercase ff-serif learn-more">LEARN MORE</a></p>
+        </div>
+
+    </header>
+
+    <main id="main" class="grid-container grid-container--home">
+
+        <!-- Articles -->
+        <div class="articles">
+            <div class="article-flex-container">
+                <div class="art-one">
+                    <h1 class="text-brown fs-350 ff-serif uppercase letter-spacing-2">NEWEST ARTICLE</h1>
+
+                    <h2 class="text-brown fs-450 ff-serif uppercase letter-spacing-2">A Simple Introduction To Insulin Resistance (And why it is not  a Diabetes dignosis)</h2>
+
+                    <p class="text-brown ff-serif">"Insulin resistance" is a phrase that's been used very frequently lately, but what does it actually mean? Is it a disease, a health condition, a risk factor, or something else? In simple terms, insulin resistance is a metabolic condition where the body's cells become less responsive to insulin, the hormone responsible for regulating blood sugar levels.  But to understand it better, we first need to talk about the basics: glucose, insulin and blood sugar.</p>
+
+                    <p><a href="main.html" class="text-brown uppercase ff-serif learn-more">LEARN MORE</a></p>
+                </div>
+                <div class="art-one-pic">
+                    <img src="images/blog/insulin-resistance-not-diabetes-dignosis.jpg" alt="orange peaches :D">
+                </div>
+            </div>
+
+            <div class="article-flex-container">
+                <div class="art-two">
+                    <h2 class="text-brown fs-450 ff-serif uppercase letter-spacing-2">The role of diet in endometriosis symptom management</h2>
+
+                    <p class="text-brown ff-serif">Endometriosis affects millions of women, yet its causes remain unclear, and effective treatment options are limited. While managing the condition can be challenging, emerging research suggests that diet may play a role in reducing inflammation and aiding symptom relief. But with so many nutrition myths surrounding endometriosis, what actually works? Discover how dietary choices could support better symptom management without unnecessary restrictions.</p>
+
+                    <p><a href="main.html" class="text-brown uppercase ff-serif learn-more">LEARN MORE</a></p>
+                </div>
+                <div class="art-two-pic">
+                    <img src="images/blog/endometriosis-symptom-management.jpeg" alt="orange peaches :D">
+                </div>
+            </div>
+
+            <div class="article-flex-container">
+                <div class="third-art">
+                    <h2 class="text-brown fs-450 ff-serif uppercase letter-spacing-2">Bloating, Probiotics, and What Happens to Our Gut Microbiome During Menopause: What You Need to Know</h2>
+
+                    <p class="text-brown ff-serif">Struggling with bloating during menopause? You're not alone! Hormonal shifts can disrupt gut health, leading to uncomfortable digestive issues. But the good news is there are ways to manage it! Discover how estrogen, gut bacteria, and diet impact bloating, plus simple, science-backed strategies to feel better and regain control.</p>
+
+                    <p><a href="main.html" class="text-brown uppercase ff-serif learn-more">LEARN MORE</a></p>
+                </div>
+                <div class="third-art-pic">
+                    <img src="images/blog/bloating-probiotics-what-happens.jpg" alt="orange peaches :D">
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter sign-up -->
+        <div class="news background-image">
+            <div class="newsletter-join">
+                <h2 class="text-brown fs-450 ff-serif uppercase letter-spacing-2">Join the list</h2>
+
+            </div>
+
+            <div class="newsletter-subscibe">
+                <h2 class="text-brown fs-450 ff-serif uppercase letter-spacing-2">Join our mailing list. <br> Subscribe today!</h2>
+            </div>
+
+            <div class="newsletter-form">
+                <form action="" class="newsletter-form-grid">
+
+                    <div class="input-pair">
+                        <!-- <label for="first-name-text">First name</label> -->
+                        <input class="fs-450 ff-serif first-name-button" type="text" id="first-name-text" placeholder="First name">
+
+                        <!-- <label for="email">Email address</label> -->
+                        <input class="fs-450 ff-serif email-button" type="email" id="email" placeholder="Email address">
+                    </div>
+
+                    <button class="fs-450 ff-serif subscribe-button" type="submit">Subscribe</button>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="reviews">
+            <button class="arrow left-arrow">‹</button>
+                <div class="reviews-wrapper">
+
+                    <div class="review background-image-softer">
+                        <div>
+                            <h1 class="text-brown fs-500 ff-serif">Dedicated to her work!</h1>
+                            <p class="indented text-brown ff-serif">A true professional, dedicated to her work. She works based on your desires and goals, which will likely be the first thing you discuss. Throughout the process, you receive continuous support from her, as she keeps track of your progress and adjusts the approach, pace, and method to move forward towards your final goal. There are definitely results. The most important one is the improvement in the quality of your life.</p>
+                        </div>
+                        <!-- <p class="stars">★ ★ ★ ★ ★</p> -->
+                        <div class="review-name-and-country">
+                            <p class="text-brown ff-serif fs-400">Siyana, 21yrs</p>
+                            <p class="text-brown ff-serif fs-400">Bulgaria</p>
+                        </div>
+
+                    </div>
+
+                    <div class="review background-image-softer">
+                        <div>
+                            <h1 class="text-brown fs-500 ff-serif">Fresh approaches and friendly support!</h1>
+                            <p class="indented  text-brown ff-serif">I worked with this wonderful young lady for 6 months, during which we achieved results that I couldn’t manage in 3 years on my own. She is very ambitious, kind, and dedicated to her cause and work. She was exactly what I needed to believe in myself and change my eating habits without depriving myself of anything. Personally, I trusted and chose an educated and ambitious young lady with fresh approaches and friendly support over any other diet promising temporary results and I was not disappointed!</p>
+                        </div>
+                        <!-- <p class="stars">★ ★ ★ ★ ★</p> -->
+                        <div class="review-name-and-country">
+                            <p class="text-brown ff-serif fs-400">Kristina, 28yrs</p>
+                            <p class="text-brown ff-serif fs-400">Bulgaria</p>
+                        </div>
+
+                    </div>
+
+                    <div class="review background-image-softer">
+                        <div>
+                            <h1 class="text-brown fs-500 ff-serif">Incredible professional!</h1>
+                            <p class="indented  text-brown ff-serif">She is an incredible professional who helped me reconnect with my body and improve on my eating habits. Thank you, Kat!</p>
+                        </div>
+
+                        <!-- <p class="stars">★ ★ ★ ★ ★</p> -->
+                        <div class="review-name-and-country">
+                            <p class="text-brown ff-serif fs-400">Lybo, 23yrs</p>
+                            <p class="text-brown ff-serif fs-400">Bulgaria</p>
+                        </div>
+                    </div>
+
+                    <div class="review background-image-softer">
+                        <div>
+                            <h1 class="text-brown fs-500 ff-serif">Incredibly productive and motivating!</h1>
+                            <p class="indented  text-brown ff-serif">Working with Ekaterina has been incredibly productive and motivating. She approaches her work with great attention and respect. Over the past six months, while working with her, I have made significant improvements in my health. I highly recommend Ekaterina’s services to anyone who wants to not only improve their health but also learn how to lead a balanced and healthy lifestyle.</p>
+                        </div>
+
+                        <!-- <p class="stars">★ ★ ★ ★ ★</p> -->
+                        <div class="review-name-and-country">
+                            <p class="text-brown ff-serif fs-400">Yasmin, 22yrs</p>
+                            <p class="text-brown ff-serif fs-400">Bulgaria</p>
+                        </div>
+
+                    </div>
+
+                    <div class="review background-image-softer">
+                        <div>
+                            <h1 class="text-brown fs-500 ff-serif">An understanding and caring approach!</h1>
+                            <p class="indented  text-brown ff-serif">I highly recommend her with both hands. A professional who approaches with understanding and care.</p>
+                        </div>
+
+                        <!-- <p class="stars">★ ★ ★ ★ ★</p> -->
+                        <div class="review-name-and-country">
+                            <p class="text-brown ff-serif fs-400">Kalinka, 34yrs</p>
+                            <p class="text-brown ff-serif fs-400">Bulgaria</p>
+                        </div>
+
+                    </div>
+
+                    <div class="review background-image-softer">
+                        <div>
+                            <h1 class="text-brown fs-500 ff-serif">I feel much better!</h1>
+                            <p class="indented  text-brown ff-serif">In a short period of working with Kati, I achieved not only a change in my weight and measurements but also a transformation in my attitude towards my body. I learned to love myself. I fell in love with fitness. I fell in love with the process. I learned not to be afraid to try new things, and she never left me without support or alone. I feel much better. The feeling of training alone continues to get better. I can't wait to work together again.</p>
+                        </div>
+
+                        <!-- <p class="stars">★ ★ ★ ★ ★</p> -->
+                        <div class="review-name-and-country">
+                            <p class="text-brown ff-serif fs-400">Siana, 21yrs</p>
+                            <p class="text-brown ff-serif fs-400">Bulgaria</p>
+                        </div>
+
+                    </div>
+
+                    <div class="review background-image-softer">
+                        <div>
+                            <h1 class="text-brown fs-500 ff-serif">Very kind!</h1>
+                            <p class="indented  text-brown ff-serif">An amazing specialist with a very kind and caring attitude towards everyone. I highly recommend.</p>
+                        </div>
+
+                        <!-- <p class="stars">★ ★ ★ ★ ★</p> -->
+                        <div class="review-name-and-country">
+                            <p class="text-brown ff-serif fs-400">Gergana, 36yrs</p>
+                            <p class="text-brown ff-serif fs-400">Bulgaria</p>
+                        </div>
+
+                    </div>
+
+                    <div class="review background-image-softer">
+                        <div>
+                            <h1 class="text-brown fs-500 ff-serif">Extremely satisfied!</h1>
+                            <p class="indented  text-brown ff-serif">I have used her services and I am extremely satisfied. I highly recommend her with both hands!</p>
+                        </div>
+
+                        <!-- <p class="stars">★ ★ ★ ★ ★</p> -->
+                        <div class="review-name-and-country">
+                            <p class="text-brown ff-serif fs-400">Mariana, 59yrs</p>
+                            <p class="text-brown ff-serif fs-400">Bulgaria</p>
+                        </div>
+
+                    </div>
+
+                    <div class="review background-image-softer">
+                        <div>
+                            <h1 class="text-brown fs-500 ff-serif">The results exceeded my expectations!</h1>
+                            <p class="indented  text-brown ff-serif">I am very satisfied with Ekaterina's services! The results we achieved exceeded all my expectations. I feel amazing and highly recommend her.</p>
+                        </div>
+
+                        <!-- <p class="stars">★ ★ ★ ★ ★</p> -->
+                        <div class="review-name-and-country">
+                            <p class="text-brown ff-serif fs-400">Stoyanka, 55yrs</p>
+                            <p class="text-brown ff-serif fs-400">Bulgaria</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            <button class="arrow right-arrow">›</button>
+        </div>
+
+    </main>
+
+    <footer class="primary-footer background-image">
+
+        <ul class="primary-footer-navigation about-section">
+            <!-- <li><a class="uppercase ff-serif" href="about.html">About</a></li> -->
+            <li class="uppercase ff-serif">About</li>
+            <li><a class="ff-serif" href="about.html">About us</a></li>
+            <li><a class="ff-serif" href="main.html">Home</a></li>
+            <li><a class="ff-serif" href="blog.html">Blog</a></li>
+            <li><a class="ff-serif" href="shop.html">Shop</a></li>
+            <li><a class="ff-serif" href="contact.html">Contact</a></li>
+            <li><a class="ff-serif" href="book-now.html">Book Now</a></li>
+            <li><p class="ff-serif copyright-text">@2024 EKVA Care. All rights reserved.</p></li>
+        </ul>
+
+        <ul class="primary-footer-navigation useful-links-section">
+            <!-- <li><a class="uppercase ff-serif" href="main.html">Useful Links</a></li> -->
+            <li class="uppercase ff-serif">Useful Links</li>
+            <li><a class="ff-serif" href="book-now.html">FAQs</a></li>
+            <li><a class="ff-serif" href="resources.html">Resources</a></li>
+            <li><a class="ff-serif" href="main.html">Privacy and Cookie Policy</a></li>
+            <li><a class="ff-serif" href="main.html">Terms and Conditions</a></li>
+        </ul>
+
+        <ul class="primary-footer-navigation contact-section">
+            <!-- <li class="footer-contact-col-title"><a class="uppercase ff-serif" href="main.html">Contact</a></li> -->
+            <li class="footer-contact-col-title uppercase ff-serif">Contact</li>
+            <li class="footer-via-web"><a class="ff-serif" href="book-now.html">Via our website</a></li>
+            <div class="contact-section-links">
+                <!-- <li class="footer-contact-mail-ph"><a href="main.html"><img src="images/footer/new.svg" alt="mail pic" class="globus"></li> -->
+                <li class="footer-contact-mail-ph"><img src="images/footer/new.svg" alt="mail pic" class="globus"></li>
+                <li class="footer-contact-mail-text"><p class="ff-serif">ekvacare@gmail.com</p></li>
+
+                <!-- <li class="footer-contact-ph-pic"><a href="main.html"><img src="images/footer/phone.svg" alt="phone pic" class="logos-ph"></li> -->
+                <li class="footer-contact-ph-pic"><img src="images/footer/phone.svg" alt="phone pic" class="logos-ph"></li>
+                <li class="footer-contact-ph-text"><p class="ff-serif">+447526990283</p></li>
+            </div>
+        </ul>
+
+        <ul class="primary-footer-navigation logos-section">
+            <li><a href="main.html"><img src="images/nav_bar/EKVA_Care_Logo.svg" alt="ekva-care logo" class="center-footer-logos footer-ekva-logo"></a></li>
+            <li><a class="uppercase ff-serif book-now center-footer-logos" href="book-now.html">Book Now</a></li>
+            <div class="logos-fb-insta">
+                <li><a href="https://www.facebook.com/share/1CQfTFZSqC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><img src="images/footer/fb.svg" alt="fb link" class="globus"></li>
+                <li><a href="https://linktr.ee/ekvdiet?utm_source=linktree_profile_share&ltsid=e46a2220-816d-4195-a5fc-a91d36c9a3c4" target="_blank" rel="noopener noreferrer"><img src="images/footer/linktree.svg" alt="linktree link" class="globus"></li>
+                <li><a href="https://www.instagram.com/ekvacare?igsh=MW9qdW5pM2RyNmJ0dA==" target="_blank" rel="noopener noreferrer"><img src="images/footer/insta.svg" alt="insta link" class="globus"></li>
+                <li><a href="https://www.tiktok.com/@ekvacare?_t=ZN-8zTwiKdNoGs&_r=1" target="_blank" rel="noopener noreferrer"><img src="images/footer/tiktok.svg" alt="tiktok link" class="globus"></li>
+            </div>
+        </ul>
+
+    </footer>
+
+    <script>
+        const leftArrow = document.querySelector(".left-arrow");
+        const rightArrow = document.querySelector(".right-arrow");
+        const reviewsWrapper = document.querySelector(".reviews-wrapper");
+
+        const scrollAmount = 320; // Adjust this based on your review card width + gap
+
+        leftArrow.addEventListener("click", () => {
+            reviewsWrapper.scrollBy({
+                left: -scrollAmount,
+                behavior: "smooth"
+            });
+        });
+
+        rightArrow.addEventListener("click", () => {
+            reviewsWrapper.scrollBy({
+                left: scrollAmount,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+</body>
+</html>

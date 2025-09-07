@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/nav_bar/EKVA_Care_Logo.svg">
+
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+         rel="stylesheet">
+
+    <title>EKVA Care</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script src="main.js" defer></script>
+</head>
+
+<body class="home">
+
+    <header class="primary-header flex background-image">
+
+        <div class="primary-header-1">
+
+            <div>
+                <a href="design-system.html"><img src="images/nav_bar/EKVA_Care_Logo.svg" alt="ekva-care logo" class="logo"></a>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+
+            <nav>
+                <ul data-devisible="false" class="primary-navigation underline-indicators flex">
+                    <li><a class="uppercase ff-serif" href="main.html">Home</a></li>
+                    <li><a class="uppercase ff-serif" href="about.html">About</a></li>
+                    <li><a class="uppercase ff-serif" href="blog.html">Blog</a></li>
+                    <li><a class="uppercase ff-serif" href="resources.html">Resources</a></li>
+                    <li><a class="uppercase ff-serif" href="shop.html">Shop</a></li>
+                    <li><a class="uppercase ff-serif" href="contact.html">Contact</a></li>
+                    <li><a class="uppercase ff-serif book-now" href="book-now.html">Book Now</a></li>
+                    <li><a href="main.html"><img src="images/nav_bar/globus.svg" alt="language globus" class="globus"></a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main id="main" class="grid-container grid-container--book-now">
+
+        <div class="book-now-grid">
+
+            <section class="prices-section">
+
+                <h2 class="text-green fs-800 ff-serif uppercase letter-spacing-1 title-book-now">Book your consultation now</h2>
+
+                <div class="art-pic-book-now">
+                    <img src="images/home/width-1600.jpeg" alt="orange peaches :D">
+                </div>
+
+                <div class="offers-book-now">
+
+                    <div class="book-now-row">
+                        <p class="text-green ff-serif letter-spacing-2 para-text">Initial Dietetic Assessment / Primary Consultation (60-70 mins)</p>
+                        <div class="para-space"></div>
+                        <p class="text-green ff-serif letter-spacing-2 para-price">75 €</p>
+                    </div>
+
+                    <div class="book-now-row">
+                        <p class="text-green ff-serif letter-spacing-2 para-text">Follow-up consultation (45 mins)</p>
+                        <div class="para-space"></div>
+                        <p class="text-green ff-serif letter-spacing-2 para-price">50 €</p>
+                    </div>
+
+                    <div class="book-now-row">
+                        <p class="text-green ff-serif letter-spacing-2 para-text">Dietetic Report</p>
+                        <div class="para-space"></div>
+                        <p class="text-green ff-serif letter-spacing-2 para-price">60 €</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="faq-section">
+                <h2 class="faq-heading text-green fs-800 ff-serif uppercase letter-spacing-1">Frequently Asked Questions</h2>
+
+                <div class="faq-container">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How do I book a consultation?
+                            <span class="faq-arrow">&#9662;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Booking a consultation is quick and easy!
+                            </p>
+                            <ol>
+                                <li>Choose an available date and time using the calendar above.</li>
+                                <li>Fill in your details: phone number, email address, name and pick a preffered platform.</li>
+                                <li>Once you submit your booking, you'll receive a confirmation email with all the additional details.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What does a dietetic report include?
+                            <span class="faq-arrow">&#9662;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Following the initial consultation, a comprehensive dietetic assessment and detailed report can be provided if further guidance is required. This report includes a full dietary analysis of your current nutritional habits, alongside a clear summary of your health goals. It offers personalised nutrition recommendations tailored to your individual needs, highlighting key areas for improvement and providing expert advice to support your long-term health and well-being.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What does an initial consultation include?
+                            <span class="faq-arrow">&#9662;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <ul>
+                                <li> Detailed Health Assessment: Discussion of your medical history, lifestyle, dietary habits, specific health concerns, medication and supplement use.</li>
+                                <li> Nutritional Goal Setting: Collaborative development of personalised health goals, considering your unique needs. </li>
+                                <li>Dietary Analysis: Review of your current eating patterns and identification of potential improvements or gaps.</li>
+                                <li>Lifestyle and Behavioral Insights: Exploration of factors such as stress, sleep, and physical activity that affect your nutrition and health.</li>
+                                <li>Personalised Action Plan: Development of a tailored plan with practical recommendations to support your long-term health and well-being.</li>
+                                <li>Q&A Session: Opportunity for you to ask questions and clarify any doubts regarding your diet and lifestyle.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What does a follow up consultation include?
+                            <span class="faq-arrow">&#9662;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <ul>
+                                <li>Review of Your Progress: We’ll discuss how you’ve been getting on with your action plan and any challenges you’ve faced along the way.</li>
+                                <li>Assessing Your Health Outcomes: Together, we’ll look at any improvements or changes in your health, such as energy levels, weight, or other markers.</li>
+                                <li>Adjusting Your Plan: Based on your feedback and progress, we’ll make any necessary adjustments to your nutrition plan to keep you on track.</li>
+                                <li>Further Nutritional Guidance: I’ll provide more advice on areas where extra education/support is needed.</li>
+                                <li>Addressing New Concerns: If any new health issues or questions have come up since our last session, we’ll talk through them.</li>
+                                <li>Motivational Support: I’ll offer encouragement and practical tips to help you maintain your new healthy habits in the long term.</li>
+                                <li>Setting New Goals when required: We’ll refine your goals to ensure they stay aligned with your evolving needs and keep you moving towards your desired outcomes.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do I need to prepare anything for my first consultation?
+                            <span class="faq-arrow">&#9662;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>To make the most of your consultation, please have the following ready:</p>
+                            <ul class="most-of-consult">
+                                <li>
+                                    - <strong>Recent Blood Test Results</strong> – If you have any recent blood work (ideally from the past 3–6 months), please have it available to share. This helps us better understand your health status.
+                                </li>
+                                <li>
+                                    - <strong>3-Day Food Diary</strong> – Track everything you eat and drink for three days, including portion sizes and ingredients. Be as detailed as possible, noting exact foods and beverages consumed, portion sizes and meal times.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <!-- <div class="faq-item">
+                        <button class="faq-question">
+                            How do I cancel my consultation?
+                            <span class="faq-arrow">&#9662;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Your booking confirmation email contains a cancellation/reschedulation link. Click on it to manage your appointment.
+                                Appointments must be canceled at least 48 hours before your scheduled time to avoid charges. Cancellations made less than 48 hours before the appointment or missed appointments will be charged as per our [Terms & Conditions].  
+                                If you experience any issues canceling online, please contact us directly at contact.ekvacare@gmail.com????? </p>
+                        </div>
+                    </div> -->
+
+                    <!-- FAQ Item 7 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Where do the consultations take place?
+                            <span class="faq-arrow">&#9662;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our consultations are conducted online for your convenience. You can choose one of the following platforms, while booking your appointment: Google Meet, Microsoft Teams, Viber, WhatsApp.</p>
+                            <p>After booking your appointment, you’ll receive a confirmation email with a link to join the call on your preferred platform.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 8 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How many sessions will I need?
+                            <span class="faq-arrow">&#9662;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The number of sessions varies depending on your goals and needs. Some clients see results in just a few sessions, while others prefer ongoing support for long-term changes. We can discuss this during your initial appointment.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 9 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Payments, Cancellations and Refunds
+                            <span class="faq-arrow">&#9662;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Q: When do I need to pay for my appointment? <br>
+                                A: Payments for appointments must be made <strong>no later than 24 hours</strong> before the scheduled consultation. We recommend making payment as early as possible to secure your spot. If payment is not received by this deadline, the consultation <strong>will be canceled</strong> automatically.</p>
+                            <p>Q: Can I cancel or reschedule my appointment? <br>
+                                A: Yes - you can, <strong>no later than 24 hours</strong> before the booked appointment. To edit the status of your booking, please use the link in the confirmation email, which you will recieve after a booking is made.</p>
+                            <p>Q: What happens if I miss my appointment or cancel <strong>after the 24-hour deadline?</strong> <br>
+                                A: No-shows or cancellations made less than 24 hours in advance are <strong>not eligible</strong> for a refund and <strong>cannot</strong> be rescheduled.</p>
+                            <p>Q: Do you offer refunds after the consultation? <br>
+                                A: No. Refunds are not provided for <strong>completed</strong> services under any circumstances.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="booking-container">
+                <!-- Calendar -->
+                <div id="calendar-container">
+                    <div id="calendar"></div>
+                </div>
+
+                <!-- Time Slots (Initially Hidden) -->
+                <div id="time-slot-container">
+                    <h2>Available Time Slots</h2>
+                    <div id="time-slots">
+                        <p>Select a date to view available slots.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Book Now Button (Initially Hidden) -->
+            <button id="book-now" style="display: none;">Book Now</button>
+
+        </div>
+
+    </main>
+
+    <footer class="primary-footer background-image">
+
+        <ul class="primary-footer-navigation about-section">
+            <li class="uppercase ff-serif">About</li>
+            <li><a class="ff-serif" href="about.html">About us</a></li>
+            <li><a class="ff-serif" href="main.html">Home</a></li>
+            <li><a class="ff-serif" href="blog.html">Blog</a></li>
+            <li><a class="ff-serif" href="shop.html">Shop</a></li>
+            <li><a class="ff-serif" href="contact.html">Contact</a></li>
+            <li><a class="ff-serif" href="book-now.html">Book Now</a></li>
+            <li><p class="ff-serif copyright-text">@2024 EKVA Care. All rights reserved.</p></li>
+        </ul>
+
+        <ul class="primary-footer-navigation useful-links-section">
+            <li class="uppercase ff-serif">Useful Links</li>
+            <li><a class="ff-serif" href="book-now.html">FAQs</a></li>
+            <li><a class="ff-serif" href="resources.html">Resources</a></li>
+            <li><a class="ff-serif" href="main.html">Privacy and Cookie Policy</a></li>
+            <li><a class="ff-serif" href="main.html">Terms and Conditions</a></li>
+        </ul>
+
+        <ul class="primary-footer-navigation contact-section">
+            <li class="footer-contact-col-title uppercase ff-serif">Contact</li>
+            <li class="footer-via-web"><a class="ff-serif" href="book-now.html">Via our website</a></li>
+            <div class="contact-section-links">
+                <li class="footer-contact-mail-ph"><img src="images/footer/new.svg" alt="mail pic" class="globus"></li>
+                <li class="footer-contact-mail-text"><p class="ff-serif">ekvacare@gmail.com</p></li>
+
+                <li class="footer-contact-ph-pic"><img src="images/footer/phone.svg" alt="phone pic" class="logos-ph"></li>
+                <li class="footer-contact-ph-text"><p class="ff-serif">+447526990283</p></li>
+            </div>
+        </ul>
+
+        <ul class="primary-footer-navigation logos-section">
+            <li><a href="main.html"><img src="images/nav_bar/EKVA_Care_Logo.svg" alt="ekva-care logo" class="center-footer-logos footer-ekva-logo"></a></li>
+            <li><a class="uppercase ff-serif book-now center-footer-logos" href="book-now.html">Book Now</a></li>
+            <div class="logos-fb-insta">
+                <li><a href="https://www.facebook.com/share/1CQfTFZSqC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><img src="images/footer/fb.svg" alt="fb link" class="globus"></li>
+                <li><a href="https://linktr.ee/ekvdiet?utm_source=linktree_profile_share&ltsid=e46a2220-816d-4195-a5fc-a91d36c9a3c4" target="_blank" rel="noopener noreferrer"><img src="images/footer/linktree.svg" alt="linktree link" class="globus"></li>
+                <li><a href="https://www.instagram.com/ekvacare?igsh=MW9qdW5pM2RyNmJ0dA==" target="_blank" rel="noopener noreferrer"><img src="images/footer/insta.svg" alt="insta link" class="globus"></li>
+                <li><a href="https://www.tiktok.com/@ekvacare?_t=ZN-8zTwiKdNoGs&_r=1" target="_blank" rel="noopener noreferrer"><img src="images/footer/tiktok.svg" alt="tiktok link" class="globus"></li>
+            </div>
+        </ul>
+
+    </footer>
+</body>
+</html>
