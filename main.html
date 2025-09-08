@@ -113,19 +113,21 @@
             </div>
 
             <div class="newsletter-form">
-                <form action="" class="newsletter-form-grid">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLScPQWPIXhHbRRidRLXPKfYiMlpSLIefsF_raD24tycHKYkHlA/formResponse" class="newsletter-form-grid mailing-form" id="mailingfForm" method="POST">
 
                     <div class="input-pair">
-                        <!-- <label for="first-name-text">First name</label> -->
-                        <input class="fs-450 ff-serif first-name-button" type="text" id="first-name-text" placeholder="First name">
+                        <input name="entry.340834498" class="fs-450 ff-serif first-name-button" type="text" id="first-name-text" placeholder="First name" required>
 
-                        <!-- <label for="email">Email address</label> -->
-                        <input class="fs-450 ff-serif email-button" type="email" id="email" placeholder="Email address">
+                        <input name="entry.1307350112" class="fs-450 ff-serif email-button" type="email" id="email" placeholder="Email address" required>
                     </div>
 
                     <button class="fs-450 ff-serif subscribe-button" type="submit">Subscribe</button>
-
                 </form>
+
+                <div id="thankYouMessageMailing" class="thank-you-mailing hidden">
+                    <h2 class="ff-serif text-brown">Thank you for subscribing!</h2>
+                    <p class="ff-serif text-brown">You are supposed to recieve an email from us confirming so!</p>
+                </div>
             </div>
         </div>
 
@@ -314,6 +316,7 @@
 
     </footer>
 
+    <!-- Image col -->
     <script>
         const leftArrow = document.querySelector(".left-arrow");
         const rightArrow = document.querySelector(".right-arrow");
@@ -335,6 +338,46 @@
             });
         });
     </script>
+
+    <!-- Mailing List Confirmation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("mailingfForm");
+            const thankYou = document.getElementById("thankYouMessageMailing");
+            const formNotice = document.getElementById("formNotice");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+
+                const formData = new FormData(form);
+
+                fetch(form.action, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                }).then(() => {
+                    form.classList.add("hidden");
+                    thankYou.classList.remove("hidden");
+                    thankYou.classList.add("show");
+                }).catch(() => {
+                    alert("Oops! Something went wrong.");
+                });
+            });
+
+            const inputs = form.querySelectorAll("input, textarea");
+            inputs.forEach(input => {
+                input.addEventListener("focus", () => {
+                    formNotice.classList.remove("hidden");
+                }, { once: true }); // show only once
+            });
+        });
+    </script>
+
 
 </body>
 </html>

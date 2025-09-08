@@ -32,10 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Thank you - contact form
-
-
-
+// Thank you - Email List
 
 // Cal:
 document.addEventListener("DOMContentLoaded", function () {
