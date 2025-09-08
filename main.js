@@ -32,6 +32,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// For the nav bar on mobile - to make it disapp when clicked outside of it
+function closeNav() {
+  nav.setAttribute('data-visible', 'false');
+  navToggle.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('nav-open');
+}
+
+document.addEventListener('click', (e) => {
+  const isClickInside = nav.contains(e.target) || navToggle.contains(e.target);
+  const isNavOpen = nav.getAttribute('data-visible') === 'true';
+
+  if (!isClickInside && isNavOpen) {
+    closeNav();
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && nav.getAttribute('data-visible') === 'true') {
+    closeNav();
+  }
+});
+
 // Thank you - Email List
 
 // Cal:
@@ -95,28 +117,5 @@ document.addEventListener("DOMContentLoaded", function () {
             alert(`Your appointment is booked for ${selectedDate} at ${selectedTime}`);
         }
     });
-});
-
-// For the nav bar on mobile to make is disapp when click outside
-
-function closeNav() {
-  nav.setAttribute('data-visible', 'false');
-  navToggle.setAttribute('aria-expanded', 'false');
-  document.body.classList.remove('nav-open');
-}
-
-document.addEventListener('click', (e) => {
-  const isClickInside = nav.contains(e.target) || navToggle.contains(e.target);
-  const isNavOpen = nav.getAttribute('data-visible') === 'true';
-
-  if (!isClickInside && isNavOpen) {
-    closeNav();
-  }
-});
-
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && nav.getAttribute('data-visible') === 'true') {
-    closeNav();
-  }
 });
 

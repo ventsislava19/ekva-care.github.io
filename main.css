@@ -966,8 +966,6 @@ textarea::placeholder {
         padding-left: 1.5rem;
 
         /* outline: blue 1px solid; */
-
-        /* border-bottom: 1px solid hsl( var(--clr-green) / .50); */
     }
 
     .newsletter-subscibe {
@@ -980,8 +978,6 @@ textarea::placeholder {
 
         border-left: 1px solid hsl( var(--clr-green) );
         text-align: center;
-
-        /* border-bottom: 1px solid hsl( var(--clr-green) / .50); */
     }
 
     .newsletter-form {
@@ -996,11 +992,10 @@ textarea::placeholder {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem; /* spacing between input pair and button */
+        gap: 1rem;
 
-
-        width: 100%;               /* Full width of container */
-        max-width: 600px;          /* Prevent it from going too wide */
+        width: 100%;
+        max-width: 600px;
         margin-inline: auto; 
     }
 
@@ -1083,11 +1078,8 @@ textarea::placeholder {
 
         position: absolute;
         top: 40%;
-        /* transform: translateY(-50%); */
-        /* background: white; */
         border-radius: 50%;
         padding: 0.5rem 1rem;
-        /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); */
         z-index: 10;
     }
 
@@ -1563,7 +1555,6 @@ textarea::placeholder {
         animation: fadeIn 0.6s ease forwards;
         opacity: 0; /* initial state for animation */
 
-
         /* Centering */
         flex-basis: 100%;
         display: flex;
@@ -1580,7 +1571,6 @@ textarea::placeholder {
 
         animation: fadeIn 0.6s ease forwards;
         opacity: 0; /* initial state for animation */
-
 
         /* Centering */
         flex-basis: 100%;
@@ -1603,7 +1593,7 @@ textarea::placeholder {
     }
 
     #formNotice.hidden {
-        display: block;       /* prevent layout shift */
+        display: block; /* prevent layout shift */
         visibility: hidden;
         opacity: 0;
     }
@@ -1623,8 +1613,8 @@ textarea::placeholder {
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
 
-        visibility: hidden; /* <-- keeps the space */
-        min-height: 3rem;   /* optional: reserve enough space */
+        visibility: hidden; /* keeps the space */
+        min-height: 3rem;
     }
 
     #formNotice:not(.hidden) {
@@ -1707,7 +1697,7 @@ textarea::placeholder {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        gap: 0.3rem; /* Reduces extra spacing */
+        gap: 0.3rem;
     }
 
     /* Each row (text - line - price) */
@@ -1715,14 +1705,14 @@ textarea::placeholder {
         display: flex;
         align-items: center;
         width: 100%;
-        gap: 0.3rem; /* Controls spacing between text, line, and price */
+        gap: 0.3rem;
     }
 
     /* Text alignment */
     .para-text {
         flex: none; /* Prevents text from stretching */
         text-align: left;
-        white-space: nowrap; /* Prevents wrapping */
+        white-space: nowrap;
         margin: 0;
         padding: 0;
     }
@@ -1826,7 +1816,7 @@ textarea::placeholder {
 
     /* When FAQ is open */
     .faq-item.active .faq-answer {
-        max-height: 550px; /* Adjust as needed */
+        max-height: 550px;
         padding: 1rem 1rem 1rem 2.3rem;
     }
 
@@ -1838,10 +1828,9 @@ textarea::placeholder {
     .booking-container {
         display: flex;
         justify-content: center;
-        /* align-items: flex-start; */
+        align-items: flex-start;
         gap: 20px;
-        /* max-width: 1000px; */
-        width: 100%;
+        width: 70%;
         margin: 2rem auto;
         align-items: center;
     }
@@ -1931,12 +1920,6 @@ textarea::placeholder {
 @media (max-width: 77.999em) {
     /*** HOME ***/
 
-    /* .grid-container {
-        text-align: left;
-        column-gap: var(--container-gap, 2rem);
-        grid-template-columns: 2em minmax(0, 40rem) minmax(0, 40rem) 2em;
-    } */
-
     /* ** Home grid ** */
     .grid-container--home {
         grid-template-columns: minmax(1rem, 1fr) minmax(0, 40rem) minmax(0, 40rem) minmax(1rem, 1fr);
@@ -1963,4 +1946,3 @@ textarea::placeholder {
         padding-top: 0;
     }
 }
-
